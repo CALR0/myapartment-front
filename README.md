@@ -34,4 +34,3 @@ Aplicación web administrativa para la gestión de apartamentos y reservas, dise
 Este proyecto está bajo la licencia MIT.
 
 © 2025 MyApartment
----
