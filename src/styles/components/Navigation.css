@@ -1,0 +1,19 @@
+@tailwind components;
+
+@layer components {
+  .nav-link {
+    @apply px-2 py-1 text-sm transition-all duration-300;
+  }
+
+  .nav-link-active {
+    @apply text-white;
+  }
+
+  .nav-link-inactive {
+    @apply text-blue-100/80 hover:text-white;
+  }
+
+  .nav-separator {
+    @apply text-blue-100/30 font-light;
+  }
+}

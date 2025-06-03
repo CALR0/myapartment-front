@@ -1,0 +1,45 @@
+@tailwind components;
+
+@layer components {
+  .search-input-container {
+    @apply bg-white rounded-[25px] shadow-[0_2px_15px_rgba(0,0,0,0.08)] flex items-center p-1.5 border border-gray-100;
+  }
+
+  .search-input {
+    @apply w-full px-6 py-3 focus:outline-none text-gray-600 placeholder-gray-400
+      transition-transform duration-300 hover:scale-95;
+  }
+
+  .search-button {
+    @apply p-3 rounded-full bg-blue-600 text-white transition-all duration-300 
+      hover:bg-blue-700 hover:shadow-lg mx-2;
+  }
+
+  .filter-button {
+    @apply p-3 text-gray-400 hover:text-gray-600 relative transition-colors duration-200 mr-2;
+  }
+
+  .filter-dropdown {
+    @apply absolute right-0 mt-2 w-72 bg-white rounded-xl shadow-lg py-2 z-10
+      transform opacity-0 scale-95 invisible
+      transition-all duration-200 ease-in-out border border-gray-100;
+  }
+
+  .filter-dropdown.open {
+    @apply opacity-100 scale-100 visible;
+  }
+
+  .filter-section {
+    @apply py-2 border-b border-gray-100 last:border-0;
+  }
+
+  .filter-section-title {
+    @apply px-4 text-sm font-medium text-gray-700 mb-2;
+  }
+
+  .price-input {
+    @apply w-24 px-3 py-2 border border-gray-200 rounded-lg 
+      focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500
+      transition-transform duration-300 hover:scale-105;
+  }
+}
