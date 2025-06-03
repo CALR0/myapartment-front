@@ -1,8 +1,8 @@
-# 🏢 MyApartment Front
+# MyApartment Front
 
 Aplicación web administrativa para la gestión de apartamentos y reservas, diseñada con una interfaz moderna e intuitiva.
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 - React + TypeScript
 - Vite
 - Tailwind CSS
