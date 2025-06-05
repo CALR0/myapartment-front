@@ -1,19 +1,48 @@
 @tailwind components;
 
 @layer components {
-  .nav-link {
-    @apply px-2 py-1 text-sm transition-all duration-300;
+  .nav-tab {
+    @apply px-4 py-2 text-sm font-medium transition-all duration-300
+           text-blue-100/80 hover:text-white relative;
   }
 
-  .nav-link-active {
+  .nav-tab:hover {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5),
+                0 0 30px rgba(255, 255, 255, 0.3);
+  }
+
+  .nav-tab-active {
     @apply text-white;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5),
+                0 0 30px rgba(255, 255, 255, 0.3);
   }
 
-  .nav-link-inactive {
-    @apply text-blue-100/80 hover:text-white;
+  .user-button {
+    @apply p-2 rounded-full transition-all duration-300
+           hover:text-white focus:outline-none;
   }
 
-  .nav-separator {
-    @apply text-blue-100/30 font-light;
+  .user-button:hover {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5),
+                0 0 30px rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+  }
+
+  .user-menu {
+    @apply absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-lg py-1
+           transform opacity-0 scale-95 origin-top-right
+           animate-[menuAppear_0.2s_ease-out_forwards] z-50;
+  }
+
+  .user-menu-item {
+    @apply w-full flex items-center px-4 py-2 text-sm text-gray-700
+           hover:bg-gray-50 transition-colors duration-200;
+  }
+
+  @keyframes menuAppear {
+    to {
+      opacity: 1;
+      transform: scale(100%);
+    }
   }
 }
